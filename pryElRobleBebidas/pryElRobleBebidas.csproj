@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF2FC1D1-A8DE-4B83-9A19-4549BC3FBB2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pryElRobleBebidas</RootNamespace>
+    <AssemblyName>pryElRobleBebidas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsGrabar.cs" />
+    <Compile Include="clsProveedores.cs" />
+    <Compile Include="clsStockBebidas.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaProveedores.Designer.cs">
+      <DependentUpon>frmCargaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGraficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGraficos.Designer.cs">
+      <DependentUpon>frmGraficos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimir.Designer.cs">
+      <DependentUpon>frmImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimirGrillaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimirGrillaProveedores.Designer.cs">
+      <DependentUpon>frmImprimirGrillaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimirGrillaStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimirGrillaStock.Designer.cs">
+      <DependentUpon>frmImprimirGrillaStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimirPorcVtasEmpl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimirPorcVtasEmpl.Designer.cs">
+      <DependentUpon>frmImprimirPorcVtasEmpl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIniciarSesion.Designer.cs">
+      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoDeProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoDeProveedores.Designer.cs">
+      <DependentUpon>frmListadoDeProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoDeStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoDeStock.Designer.cs">
+      <DependentUpon>frmListadoDeStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpciones.Designer.cs">
+      <DependentUpon>frmOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPorcentajeVtas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPorcentajeVtas.Designer.cs">
+      <DependentUpon>frmPorcentajeVtas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarse.Designer.cs">
+      <DependentUpon>frmRegistrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStock.Designer.cs">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaProveedores.resx">
+      <DependentUpon>frmCargaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGraficos.resx">
+      <DependentUpon>frmGraficos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimir.resx">
+      <DependentUpon>frmImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimirGrillaProveedores.resx">
+      <DependentUpon>frmImprimirGrillaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimirGrillaStock.resx">
+      <DependentUpon>frmImprimirGrillaStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimirPorcVtasEmpl.resx">
+      <DependentUpon>frmImprimirPorcVtasEmpl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIniciarSesion.resx">
+      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoDeProveedores.resx">
+      <DependentUpon>frmListadoDeProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoDeStock.resx">
+      <DependentUpon>frmListadoDeStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpciones.resx">
+      <DependentUpon>frmOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPorcentajeVtas.resx">
+      <DependentUpon>frmPorcentajeVtas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarse.resx">
+      <DependentUpon>frmRegistrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStock.resx">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\RobleMarron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\RobleBlanco.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
